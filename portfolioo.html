@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/68a18929f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <!----------start header-------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/photo_6005951128946195796_m.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Work">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closebar()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openbar()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Junior Front-end developer</p>
+                <h1>Hi, I'm <span>Yara </span> Medhat <br>From Egypt</h1>
+            </div>
+        </div>
+         <!-----------------end header------------------>
+    </div>
+    <!----------------------start About---------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="header-txt">About Me</h1>
+                    <p>Junior front-end engineer skilled in using Html5,CSS3
+                        JavaScript , BootStrap ,Angular. skilled in making websites
+                        responsive to all devices. Strong creative and analytical skills.
+                        skilled in converting the UX/UI design to a running website.
+                        skilled in implementing all types of websites (ex:Resturants
+                        ,E-commerce,...).
+                    </p>
+                    <div class="text-tab">
+                        <ul>
+                            <li class="text-link active-link" onclick="opentab('skills')">Skills</li>
+                            <li class="text-link"onclick="opentab('experience')">Experience</li>
+                            <li class="text-link"onclick="opentab('education')">Education</li>
+                        </ul>
+                    </div>
+                    <div class="content-tab active-tab" id="skills">
+                        <p><span>Front-End</span><br>HTML,CSS,JavaScript</p>
+                        <p><span>Back-End</span><br>Nodejs,Java,php</p>
+                        <p><span>FrameWork</span><br>Angular,React,React-Native</p>
+                    </div>
+                    <div class="content-tab" id="experience">
+                        <p><span>E-Commerce project</span><br>HTML,CSS,JavaScript,Bootstrap</p>
+                        <p><span>Portfolio project</span><br>HTML,CSS,JavaScript</p>
+                        <p><span>E-Learning project</span><br>HTML,CSS,JavaScript,Bootstrap</p>
+                    </div> 
+                    <div class="content-tab" id="education">
+                        <p><span>Ain-Shams University</span><br>2019-2023</p>
+                        <p><span>Computer-Science</span><br>2019-2023</p>
+                    </div>  
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-----------------------end About------------------------>
+    <!---------------------start services----------------->
+    <div id="services">
+        <div class="container">
+                <h1 class="header-txt">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Front-End <br>Developer</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-server"></i>
+                        <h2> Back-End <br>Developer</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2> Web <br>Designer</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                              when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------end services----------------->
+     <!-----------------------start Work------------------------>
+     <div id="Work">
+        <div class="container">
+                <h1 class="header-txt">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                       <img src="images/work-1.png">
+                       <div class="contents">
+                        <h2>Social Media App</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="contents">
+                            <h2>E-commerce website</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="contents">
+                            <h2>E-learning websit</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="contents">
+                            <h2>Simple Shopping Cart</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="contents">
+                            <h2>Portfolio Website</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="contents">
+                            <h2>Online Gaming</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+                
+
+        </div>
+
+     </div>
+    <!---------------------End Work-------------------->
+     <!-----------------------start Contact------------------------>
+     <div id="Contact">
+        <div class="container">
+            <h1 class="header-txt">Contact Me</h1>
+            <div class="row">
+                <div class="first-content">
+                    <p><i class="fa-solid fa-envelope"></i>yaramedhat145@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>01092674806</p>
+                    <div class="icons">
+                       <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                       <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv edited.jpg" download class="btn btn2">Download cv</a>
+                </div>
+                <div class="second-content">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter your Name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="message" rows="6" placeholder="Enter your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Yara Medhat made <i class="fa-solid fa-heart"></i> by linkedin</p>
+        </div>
+     </div>
+     <!---------------------End Contact-------------------->
+  <script>
+    textlinks=document.getElementsByClassName("text-link");
+    textcontents=document.getElementsByClassName("content-tab");
+    function opentab(name){
+        for(textlink of textlinks){
+            textlink.classList.remove("active-link");
+        }
+        for(textcontent of textcontents){
+            textcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(name).classList.add("active-tab")
+    }
+  </script>  
+  <script>
+    var menu=document.getElementById("sidemenu");
+    function openbar(){
+        menu.style.right = "0";
+    }
+    function closebar(){
+        menu.style.right = "-200px";
+    }
+  </script>
+  
+</body>
+</html>
